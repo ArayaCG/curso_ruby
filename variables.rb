@@ -29,21 +29,32 @@ to_f = float
 to_s = string
 =end
 num = 100
-nom.to_f
+num.to_f
 print num
 
 #alcance de las viables (Local Global Instancia Clase)
+=begin
 bloque 1
 variable = "hola"
 print variable
 end
+=end
 #no llega porque no estan en el mismo bloque
+=begin
 bloque 2
 print variable
 end
+=end
+
+=begin
 
 Local variableLocal
 Global $variableLocal
 Instancia @variableInstancia
 Clase @@variableClase
 Constante VARIABLECONSTANTE
+Con defined? nos dice donde se declaró
+=end
+
+$va_local = 10;
+print defined? $va_local;
